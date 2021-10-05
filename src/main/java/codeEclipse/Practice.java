@@ -1,4 +1,4 @@
-package org;
+package codeEclipse;
 
 
 public class Practice {
