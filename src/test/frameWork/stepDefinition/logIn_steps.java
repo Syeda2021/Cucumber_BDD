@@ -23,4 +23,9 @@ public class logIn_steps {
     @When("I click on Login Button")
     public void iClickOnLoginButton() {
     }
+
+    @And("I click Create New Account Button in Login Page")
+    public void iClickCreateNewAccountButtonInLoginPage() {
+
+    }
 }

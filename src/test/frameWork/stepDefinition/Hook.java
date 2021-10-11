@@ -1,10 +1,10 @@
 package stepDefinition;
 
-import basePage.SetUp;
+import basePage.Base;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
-public class Hook extends SetUp {
+public class Hook extends Base {
     public static String env = System.getProperty("env");
     public static String driverType = System.getProperty("browser");
     public static String url;

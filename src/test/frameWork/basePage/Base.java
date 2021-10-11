@@ -2,11 +2,12 @@ package basePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
-
 import java.util.concurrent.TimeUnit;
-public class SetUp {
+
+public class Base {
 
         public static WebDriver driver;
 
@@ -20,13 +21,15 @@ public class SetUp {
             } else if (driverType.equalsIgnoreCase("ie")){
                 WebDriverManager.iedriver().setup();
                 driver = new InternetExplorerDriver();
+            }else if (driverType.equalsIgnoreCase("edge")){
+                WebDriverManager.edgedriver().setup();
+                driver = new EdgeDriver();
             }
-            // edge
+
             driver.manage().deleteAllCookies();
             driver.manage().window().maximize();
             driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
             return driver;
         }
-
 
 }
