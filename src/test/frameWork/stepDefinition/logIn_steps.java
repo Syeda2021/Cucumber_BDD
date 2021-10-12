@@ -26,6 +26,15 @@ public class logIn_steps {
 
     @And("I click Create New Account Button in Login Page")
     public void iClickCreateNewAccountButtonInLoginPage() {
+        
 
+    }
+
+    @And("I enter an invalid email address")
+    public void iEnterAnInvalidEmailAddress() {
+    }
+
+    @And("I enter an invalid password")
+    public void iEnterAnInvalidPassword() {
     }
 }

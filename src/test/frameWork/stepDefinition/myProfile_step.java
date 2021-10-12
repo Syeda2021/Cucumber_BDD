@@ -22,4 +22,8 @@ public class myProfile_step {
     @Then("I should see Thank you for sign up message")
     public void iShouldSeeThankYouForSignUpMessage() {
     }
+
+    @Then("I should not be able to log in with popped up error message")
+    public void iShouldNotBeAbleToLogInWithPoppedUpErrorMessage() {
+    }
 }
