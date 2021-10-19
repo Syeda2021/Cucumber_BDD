@@ -21,7 +21,7 @@ public class myProfile_page extends SetUp {
 
 
     //functions
-
+   // public void welcomeNote() {Object welcome;welcomeNoteLocator.getText(); }
 
 
 
