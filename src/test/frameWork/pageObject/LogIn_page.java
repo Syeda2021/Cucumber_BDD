@@ -32,7 +32,6 @@ public class LogIn_page extends SetUp {
         passwordLocator.sendKeys(pass);
     }
     public void clickOnLoginButton() {
-        Object login;
         loginLocator.click(); }
 
 }

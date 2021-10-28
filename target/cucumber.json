@@ -1,0 +1,119 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-10-28T04:00:54.529Z",
+        "before": [
+          {
+            "result": {
+              "duration": 6519473800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.startTest()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Login with valid email and password",
+        "description": "",
+        "id": "login-feature-test;login-with-valid-email-and-password",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.Hook.endTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 17206500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am at TalentTEK Homepage",
+            "match": {
+              "location": "stepDefinition.logIn_steps.iAmAtTalentTEKHomepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 48568800,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter a valid email address",
+            "match": {
+              "location": "stepDefinition.logIn_steps.iEnterAValidEmailAddress()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44605100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I enter a valid password",
+            "match": {
+              "location": "stepDefinition.logIn_steps.iEnterAValidPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 345928500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I click on Login Button",
+            "match": {
+              "location": "stepDefinition.logIn_steps.iClickOnLoginButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 34661800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I should be able to successfully log in",
+            "match": {
+              "location": "stepDefinition.myProfile_step.iShouldBeAbleToSuccessfullyLogIn()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@login"
+          },
+          {
+            "name": "@smoke"
+          },
+          {
+            "name": "@regression"
+          },
+          {
+            "name": "@prePost"
+          }
+        ]
+      }
+    ],
+    "name": "Login Feature Test",
+    "description": "",
+    "id": "login-feature-test",
+    "keyword": "Feature",
+    "uri": "file:src/test/frameWork/features/logIn.feature",
+    "tags": []
+  }
+]
