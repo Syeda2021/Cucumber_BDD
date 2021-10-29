@@ -1,36 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-10-28T00:00:54 EDT" name="Surefire suite" finished-at="2021-10-28T00:01:01 EDT" duration-ms="7497">
+  <suite started-at="2021-10-29T17:02:33 EDT" name="Surefire suite" finished-at="2021-10-29T17:02:47 EDT" duration-ms="14846">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@145eaa29]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2021-10-28T00:00:54 EDT" name="Surefire test" finished-at="2021-10-28T00:01:01 EDT" duration-ms="7497">
+    <test started-at="2021-10-29T17:02:33 EDT" name="Surefire test" finished-at="2021-10-29T17:02:47 EDT" duration-ms="14846">
       <class name="TestRunner">
-        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-28T00:00:54 EDT" name="setUpClass" finished-at="2021-10-28T00:00:54 EDT" duration-ms="298" status="PASS">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-29T17:02:33 EDT" name="setUpClass" finished-at="2021-10-29T17:02:33 EDT" duration-ms="254" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-28T00:00:54 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-28T00:01:01 EDT" duration-ms="7093" status="PASS">
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-29T17:02:33 EDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-10-29T17:02:47 EDT" duration-ms="14484" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA["Login with valid email and password"]]>
+                <![CDATA["Student should be able to register with valid info"]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA["Optional[Login Feature Test]"]]>
+                <![CDATA["Optional[Sign up]"]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.StringIndexOutOfBoundsException">
+            <message>
+              <![CDATA[begin 0, end 21, length 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.StringIndexOutOfBoundsException: begin 0, end 21, length 0
+at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3734)
+at java.base/java.lang.String.substring(String.java:1903)
+at pageObject.SignUp_page.checkSuccessMsgWithoutId(SignUp_page.java:154)
+at stepDefinition.signUp_steps.iShouldSeeThankYouForSignUpMessage(signUp_steps.java:47)
+at ✽.I should see Thank you for sign up message(file:///C:/Users/syeda/Documents/TalentTEK/git/Cucumber_BDD/src/test/frameWork/features/signUp.feature:9)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.StringIndexOutOfBoundsException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-28T00:01:01 EDT" name="tearDownClass" finished-at="2021-10-28T00:01:01 EDT" duration-ms="86" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:TestRunner@145eaa29]" started-at="2021-10-29T17:02:47 EDT" name="tearDownClass" finished-at="2021-10-29T17:02:47 EDT" duration-ms="86" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

@@ -39,8 +39,7 @@ public class logIn_steps extends SetUp {
 
     @And("I click Create New Account Button in Login Page")
     public void iClickCreateNewAccountButtonInLoginPage() {
-        
-
+        lg.clickCreateNewAccountBtn();
     }
 
     @And("I enter an invalid email address")

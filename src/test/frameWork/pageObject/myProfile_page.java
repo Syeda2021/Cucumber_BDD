@@ -20,10 +20,9 @@ public class myProfile_page extends SetUp {
 
 
 
-
+  //functions
    public void welcomeMsg() {
-       String exp = "Welcome to TalentTek"; // Product Owner -- Stake holders -- Business Anylst
-       // Act come from dev team. QA team is the one who is dev code
+       String exp = "Welcome to TalentTek";
        String act = welcomeNoteLocator.getText();
        System.out.println(act);
        Assert.assertEquals(act, exp);

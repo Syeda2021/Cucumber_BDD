@@ -1,4 +1,7 @@
 -------------------------------------------------------------------------------
 Test set: TestRunner
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 7.827 s - in TestRunner
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 15.187 s <<< FAILURE! - in TestRunner
+TestRunner.runScenario["Student should be able to register with valid info", "Optional[Sign up]"](1)  Time elapsed: 14.605 s  <<< FAILURE!
+java.lang.StringIndexOutOfBoundsException: begin 0, end 21, length 0
+
