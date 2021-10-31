@@ -42,6 +42,7 @@ public class SetUp {
     public Select dropDownByIndex(WebElement element, int indexNumber){
         Select drop = new Select(element);
         drop.selectByIndex(indexNumber);
+
         return drop;
     }
 

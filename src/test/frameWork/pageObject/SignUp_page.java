@@ -13,6 +13,7 @@ public class SignUp_page extends SetUp {
     SetUp St = new SetUp();
     Random rand = new Random();
 
+
     public SignUp_page(WebDriver driver) {
         PageFactory.initElements(driver, this);
         SetUp.driver = driver;
@@ -90,6 +91,7 @@ public class SignUp_page extends SetUp {
         Thread.sleep(5000);
 
     }
+
 
     public void selectFemaleGender() {female.click();}
 
