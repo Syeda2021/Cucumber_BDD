@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Cucumber_BDD</td>
                           <td>1</td>
-                        <td>29 Oct 2021, 17:02</td>
+                        <td>09 Nov 2021, 13:27</td>
           </tr>
         </tbody>
       </table>
@@ -123,17 +123,17 @@ $(document).ready(function() {
         <tbody>
         <tr>
           <td class="tagname">@signup</td>
-                    <td >0</td>
-          <td  class="failed"    >1</td>
+                    <td  class="passed"    >1</td>
+          <td >0</td>
           <td class="total">1</td>
-          <td      class="passed"    >4</td>
-          <td      class="failed"    >1</td>
+          <td      class="passed"    >5</td>
+          <td >0</td>
           <td >0</td>
           <td >0</td>
           <td >0</td>
           <td class="total">5</td>
-          <td class="duration" data-value="11456610000">11s 456ms</td>
-          <td class="failed">Failed</td>
+          <td class="duration" data-value="11638600400">11s 638ms</td>
+          <td class="passed">Passed</td>
         </tr>
         </tbody>
 
@@ -163,9 +163,9 @@ $(document).ready(function() {
   </div>
 
 
-    <span data-toggle="collapse" class=" collapsable-control" data-target="#element-1">
+    <span data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#element-1">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Scenario</span>
   <span class="name">Student should be able to register with valid info</span>
   
@@ -176,7 +176,7 @@ $(document).ready(function() {
   </span>
   <div class="description indention"></div>
 
-  <div id="element-1" class="collapse collapsable-details  in ">
+  <div id="element-1" class="collapse collapsable-details ">
     
   <div class="inner-level hooks-before">
         <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#before-2">
@@ -197,7 +197,7 @@ $(document).ready(function() {
             <span class="keyword indention">Before</span>
                           <span class="location name">stepDefinition.Hook.startTest()</span>
                         
-  <span class="lead-duration duration">2s 759ms</span>
+  <span class="lead-duration duration">2s 808ms</span>
 
           </div>
 
@@ -213,9 +213,9 @@ $(document).ready(function() {
 
     
 <div class="steps inner-level">
-    <div data-toggle="collapse" class=" collapsable-control" data-target="#steps-3">
+    <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#steps-3">
     
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Steps</span>
   <span class="name"></span>
   
@@ -225,14 +225,14 @@ $(document).ready(function() {
 
   </div>
 
-  <div id="steps-3" class="inner-level collapse collapsable-details  in ">
+  <div id="steps-3" class="inner-level collapse collapsable-details ">
           <div class="step">
         
 <div class="brief passed">
   <span class="keyword indention">Given</span>
   <span class="name">I am at TalentTEK Homepage</span>
   
-  <span class="lead-duration duration">018ms</span>
+  <span class="lead-duration duration">019ms</span>
 
   </div>
 
@@ -253,7 +253,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I click Create New Account Button in Login Page</span>
   
-  <span class="lead-duration duration">195ms</span>
+  <span class="lead-duration duration">219ms</span>
 
   </div>
 
@@ -274,7 +274,7 @@ $(document).ready(function() {
   <span class="keyword indention">And</span>
   <span class="name">I enter valid student information</span>
   
-  <span class="lead-duration duration">11s 188ms</span>
+  <span class="lead-duration duration">11s 097ms</span>
 
   </div>
 
@@ -312,32 +312,15 @@ $(document).ready(function() {
       </div>
           <div class="step">
         
-<div class="brief failed">
+<div class="brief passed">
   <span class="keyword indention">Then</span>
   <span class="name">I should see Thank you for sign up message</span>
   
-  <span class="lead-duration duration">019ms</span>
+  <span class="lead-duration duration">268ms</span>
 
   </div>
 
         
-
-  <div class="inner-level">
-    <div class="message indention">
-      <div data-toggle="collapse" class="collapsable-control" data-target="#msg-4">
-          <a>Error message</a>
-      </div>
-      <div id="msg-4" class="collapse collapsable-details">
-        <pre>java.lang.StringIndexOutOfBoundsException: begin 0, end 21, length 0
-	at java.base/java.lang.String.checkBoundsBeginEnd(String.java:3734)
-	at java.base/java.lang.String.substring(String.java:1903)
-	at pageObject.SignUp_page.checkSuccessMsgWithoutId(SignUp_page.java:154)
-	at stepDefinition.signUp_steps.iShouldSeeThankYouForSignUpMessage(signUp_steps.java:47)
-	at ✽.I should see Thank you for sign up message(file:///C:/Users/syeda/Documents/TalentTEK/git/Cucumber_BDD/src/test/frameWork/features/signUp.feature:9)
-</pre>
-      </div>
-    </div>
-  </div>
 
 
         
@@ -354,7 +337,7 @@ $(document).ready(function() {
 
     
   <div class="inner-level hooks-after">
-        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-5">
+        <div data-toggle="collapse" class=" collapsed  collapsable-control" data-target="#after-4">
       
 <div class="brief passed">
   <span class="keyword indention">Hooks</span>
@@ -366,13 +349,13 @@ $(document).ready(function() {
 
     </div>
 
-    <div id="after-5" class="inner-level collapse collapsable-details ">
+    <div id="after-4" class="inner-level collapse collapsable-details ">
               <div class="hook">
           <div class="brief passed">
             <span class="keyword indention">After</span>
                           <span class="location name">stepDefinition.Hook.endTest(io.cucumber.java.Scenario)</span>
                         
-  <span class="lead-duration duration">181ms</span>
+  <span class="lead-duration duration">001ms</span>
 
           </div>
 
@@ -380,17 +363,6 @@ $(document).ready(function() {
 
           
           
-  <div class="embeddings inner-level">
-                <div class="embedding indention">
-    <div data-toggle="collapse" data-target="#embedding_embedding_-1693654585" class="collapsable-control">
-      <a>Attachment 1 (png)</a>
-      <a href="embeddings/embedding_-1693654585.png" target="_blank"><span class="download-button glyphicon glyphicon-download-alt"></span></a>
-    </div>
-    <div id="embedding_embedding_-1693654585" class="collapse collapsable-detail">
-      <span class="embedding-content"><img src="embeddings/embedding_-1693654585.png"></span>
-    </div>
-  </div>
-        </div>
 
         </div>
           </div>

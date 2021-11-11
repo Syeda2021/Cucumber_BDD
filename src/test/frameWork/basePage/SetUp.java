@@ -7,9 +7,6 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.support.ui.Select;
-
-import java.util.ArrayList;
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 public class SetUp {
@@ -42,6 +39,13 @@ public class SetUp {
     public Select dropDownByIndex(WebElement element, int indexNumber){
         Select drop = new Select(element);
         drop.selectByIndex(indexNumber);
+
+        return drop;
+    }
+
+    public Select dropDownByValue(WebElement element, int value){
+        Select drop = new Select(element);
+        drop.selectByValue(String.valueOf(value));
 
         return drop;
     }

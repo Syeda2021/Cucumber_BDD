@@ -12,4 +12,6 @@ CTL+I
 
 # How to execute test in CMD
 mvn verify -Denv=qa -Dbrowser=ff -Dcucumber.filter.tags="@login"
-D= default.
+D= default. 
+
+//"^I am on Home Page of \"([^\"]*)\"$"

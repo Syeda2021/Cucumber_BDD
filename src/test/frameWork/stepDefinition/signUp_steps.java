@@ -31,7 +31,10 @@ public class signUp_steps extends SetUp {
         Thread.sleep(5000);
 
         sp.enterDob();
+
         sp.selectMaleGender();
+
+        //sp.genderSelect();
 
         sp.selectAgreeCheckBox();
     }

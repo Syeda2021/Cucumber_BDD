@@ -1,17 +1,24 @@
 package pageObject;
 
 import basePage.SetUp;
+import com.github.javafaker.Faker;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
+
+import java.util.List;
 import java.util.Random;
 
 public class SignUp_page extends SetUp {
     SetUp St = new SetUp();
     Random rand = new Random();
+
+    //Faker faker = new Faker();
+    //Utils util = new Utils();
+
 
 
     public SignUp_page(WebDriver driver) {
@@ -41,18 +48,24 @@ public class SignUp_page extends SetUp {
 
     @FindBy(how = How.ID, using = "male")
     public WebElement male;
+
     @FindBy(how = How.ID, using = "female")
     public WebElement female;
 
-    @FindBy(how = How.CLASS_NAME, using = "radio-inline")
-    public WebElement gender;
+//    @FindBy(how = How.CLASS_NAME, using = "radio-inline")
+//    public WebElement gender;
+//@FindBy(how = How.NAME, using = "gender")
+//public WebElement genderSelect;
 
 
     @FindBy(how = How.NAME, using = "agree")
     public WebElement agreeCheckBox;
-    @FindBy(how = How.XPATH, using = "//*[@id='wrap']/div/div/form/button")
+
+    @FindBy(how = How.XPATH, using = "//*[@id='signup-form']/button")
+   // @FindBy(how = How.LINK_TEXT, using = "Create my account")
     public WebElement createMyAccountButton;
-    @FindBy(how = How.XPATH, using = "//*[@id='wrap']/div/div/form/div[1]")
+    //   //*[@id="success_message"]/div
+    @FindBy(how = How.XPATH, using = "//*[@id='success_message']/div")
     public WebElement thankYouMessageWithoutId;
 
     // functions
@@ -81,6 +94,7 @@ public class SignUp_page extends SetUp {
     }
 
     public void enterDob() throws InterruptedException {
+        Thread.sleep(5000);
         St.dropDownByIndex(birthMonth,rand.nextInt(11));
         if(birthMonth.getText()=="Feb"){
             St.dropDownByIndex(birthDay,rand.nextInt(27));
@@ -88,14 +102,39 @@ public class SignUp_page extends SetUp {
             St.dropDownByIndex(birthDay, rand.nextInt(30));
         }
         St.dropDownByIndex(birthYear,rand.nextInt(2013-1935-1));
-        Thread.sleep(5000);
+
 
     }
+//    public void enterDob() throws InterruptedException {
+//        St.dropDownByIndex(birthMonth,LocalDateTime.now().getMonthValue());
+//
+//        if(birthMonth.getText()=="Feb"){
+//            St.dropDownByIndex(birthDay,LocalDateTime.now().getDayOfMonth()-2);
+//        }else {
+//            St.dropDownByIndex(birthDay,LocalDateTime.now().getDayOfMonth());
+//        }
+//
+//        St.dropDownByValue(birthYear, LocalDateTime.now().minusMonths(120).getYear()-1);
+//        Thread.sleep(5000);
+//    }
 
 
-    public void selectFemaleGender() {female.click();}
+    //public void selectFemaleGender() {female.click();}
 
     public void selectMaleGender() {male.click();}
+
+
+
+
+
+//    public void genderSelect(){
+//        if(gender.getText()=="Male"){
+//            male.click();
+//        }else {
+//            female.click();
+//        }
+//
+//    }
 
 
 
@@ -122,6 +161,7 @@ public class SignUp_page extends SetUp {
         System.out.println(signupPageUrl);
         driver.get(signupPageUrl);
     }
+
 
 
 
