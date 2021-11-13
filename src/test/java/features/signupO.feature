@@ -3,7 +3,7 @@ Feature: TalentTEK Sign up feature test
   Background: Create new user
   Given
 
-  @signup @regression @smoke @prod
+  @signuP @regression @smoke @prod
   Scenario: User should be able to sign up with valid email address
     Given I am at talentTEK Home Page
     And I click on Create New Account button
@@ -15,7 +15,7 @@ Feature: TalentTEK Sign up feature test
 #    When I click Create My Account button
 #    Then I should be able to get an student Id
 
-  @signup @regression
+  @signuP @regression @qa
   Scenario: User should not be able to sign up with invalid email address
     Given I am at talentTEK Home Page
     And I click on Create New Account button
@@ -26,13 +26,13 @@ Feature: TalentTEK Sign up feature test
 #    When I click Create My Account button
 #    Then I should get an invalid email error message
 
-  @signup @regression
+  @signuP @regression
   Scenario: User should not be able to sign up with male radiobutton
 
-  @signup @regression
+  @signuP @regression
   Scenario: User should not be able to sign up with female radiobutton
 
-  @ScenarioOutline
+  @ScenarioOutline @qa @signuP
   Scenario Outline: Use of different data from Scenario
     Given I am at talentTEK Home Page
     And I click on Create New Account button

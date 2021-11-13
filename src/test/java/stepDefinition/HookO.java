@@ -1,6 +1,6 @@
-package stepDef;
+package stepDefinition;
 
-import base.Config;
+import basePage.Config;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -8,7 +8,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.util.Strings;
 
-public class Hook1 extends Config {
+public class HookO extends Config {
 
     public static String envData = System.getProperty("env");
     public static String driverType = System.getProperty("browser");

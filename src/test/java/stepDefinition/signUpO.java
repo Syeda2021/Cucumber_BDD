@@ -1,14 +1,13 @@
-package stepDef;
-
-import base.Config;
+package stepDefinition;
+import basePage.Config;
 import com.github.javafaker.Faker;
 import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.And;
-import pageObject.signUp_page1;
+import pageObject.signUp_pageO;
 
-public class signUp extends Config {
+public class signUpO extends Config {
 
-    signUp_page1 signup = new signUp_page1(driver);
+    signUp_pageO signup = new signUp_pageO(driver);
     Faker faker = new Faker();
 
     @And("I enter student information with valid email address")

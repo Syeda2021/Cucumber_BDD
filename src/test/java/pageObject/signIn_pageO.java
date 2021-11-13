@@ -1,15 +1,15 @@
 package pageObject;
 
-import base.Config;
+import basePage.Config;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.PageFactory;
 
-public class signIn_page1 extends Config {
+public class signIn_pageO extends Config {
 
-    public signIn_page1 (WebDriver driver){
+    public signIn_pageO(WebDriver driver){
         PageFactory.initElements(driver, this);
         Config.driver = driver;
     }

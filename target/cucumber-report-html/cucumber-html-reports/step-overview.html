@@ -76,7 +76,7 @@ $(document).ready(function() {
           <tr class="info">
             <td>Cucumber_BDD</td>
                           <td>1</td>
-                        <td>11 Nov 2021, 11:43</td>
+                        <td>12 Nov 2021, 01:38</td>
           </tr>
         </tbody>
       </table>
@@ -98,7 +98,81 @@ $(document).ready(function() {
 <div class="container-fluid" id="summary">
   <div class="row">
     <div class="col-md-10 col-md-offset-1">
-              <p>You have no features in your cucumber report</p>
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">stepDefinition.Hook.endTest(io.cucumber.java.Scenario)</td>
+                <td>3</td>
+                <td class="duration" data-value="2000800">002ms</td>
+                <td class="duration" data-value="666933">000ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.Hook.startTest()</td>
+                <td>3</td>
+                <td class="duration" data-value="6640499300">6s 640ms</td>
+                <td class="duration" data-value="2213499766">2s 213ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.logIn_steps.iAmAtTalentTEKHomepage()</td>
+                <td>3</td>
+                <td class="duration" data-value="24900200">024ms</td>
+                <td class="duration" data-value="8300066">008ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.logIn_steps.iClickCreateNewAccountButtonInLoginPage()</td>
+                <td>3</td>
+                <td class="duration" data-value="555060100">555ms</td>
+                <td class="duration" data-value="185020033">185ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.signUp_steps.iClickOnCreateMyAccountButton()</td>
+                <td>3</td>
+                <td class="duration" data-value="103219700">103ms</td>
+                <td class="duration" data-value="34406566">034ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.signUp_steps.iEnterValidStudentInformation()</td>
+                <td>3</td>
+                <td class="duration" data-value="33156394900">33s 156ms</td>
+                <td class="duration" data-value="11052131633">11s 052ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">stepDefinition.signUp_steps.iShouldSeeThankYouForSignUpMessage()</td>
+                <td>3</td>
+                <td class="duration" data-value="628202400">628ms</td>
+                <td class="duration" data-value="209400800">209ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>7</td>
+              <td>21</td>
+              <td class="duration">41s 110ms</td>
+              <td class="duration">1s 957ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
           </div>
   </div>
 </div>

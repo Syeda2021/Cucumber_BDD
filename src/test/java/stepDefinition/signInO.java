@@ -1,14 +1,14 @@
-package stepDef;
+package stepDefinition;
 
-import base.Config;
+import basePage.Config;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
-import pageObject.signIn_page1;
+import pageObject.signIn_pageO;
 
-public class signIn extends Config {
-    signIn_page1 signIn = new signIn_page1(driver);
+public class signInO extends Config {
+    signIn_pageO signIn = new signIn_pageO(driver);
 
     @Given("I am at talentTEK Home Page")
     public void iAmAtTalentTEKHomePage() {

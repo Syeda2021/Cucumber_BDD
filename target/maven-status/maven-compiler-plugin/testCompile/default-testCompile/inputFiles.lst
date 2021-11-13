@@ -2,8 +2,8 @@ C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\stepDef\signIn
 C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\stepDef\Hook1.java
 C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\stepDef\signUp.java
 C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\TestRunner1.java
-C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObject\signUp_page1.java
-C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObject\myProfile_page1.java
+C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObj\signUp_page1.java
+C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObj\signIn_page1.java
 C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\base\Config.java
-C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObject\signIn_page1.java
+C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\pageObj\myProfile_page1.java
 C:\Users\syeda\Documents\TalentTEK\git\Cucumber_BDD\src\test\java\stepDef\profile.java

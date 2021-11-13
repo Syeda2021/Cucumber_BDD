@@ -1,6 +1,6 @@
 Feature: TalentTEK Sign In feature test
 
-  @regression @smoke @prod
+  @regression @smoke @qa
   Scenario: User should be able to sign in with valid credentials
     Given I am at talentTEK Home Page
     And I enter student email address
@@ -8,7 +8,7 @@ Feature: TalentTEK Sign In feature test
     When I click on Login button
     Then I should be successfully log in
 
-  @signIn @regression @smoke @prod
+  @signIn @regression @smoke @qa
   Scenario: User should be able to sign in with valid credentials
     Given I am at talentTEK Home Page
     And I enter student email address as "qa.test559@gmail.com"
