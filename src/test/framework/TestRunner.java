@@ -2,7 +2,7 @@ import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(
-        features = "src/test/frameWork/features",
+        features = "src/test/framework/features",
         glue = "stepDefinition",
         plugin = {
                 "pretty",
