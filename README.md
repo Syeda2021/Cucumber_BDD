@@ -14,4 +14,7 @@ CTL+I
 mvn verify -Denv=qa -Dbrowser=ff -Dcucumber.filter.tags="@login"
 D= default. 
 
-//"^I am on Home Page of \"([^\"]*)\"$"
+//"^I am on Home Page of \"([^\"]*)\"$" 
+
+java -jar jenkins.war
+java -jar jenkins.war  --enable-future-java   --httpPort=8080
